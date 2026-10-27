@@ -1,4 +1,5 @@
 <img width="388" height="388" alt="Picture11" src="https://github.com/user-attachments/assets/b0265299-5c4f-4241-8d19-0df5a11f5370" />
+<img width="803" height="740" alt="132" src="https://github.com/user-attachments/assets/e1118cb0-70c2-4f98-85d4-112501adcc9b" />
 
 # 📚 Pustaka Kiosk — Sistem Peminjaman Buku Perpustakaan Berbasis Raspberry Pi, RFID, dan QR Code
 
