@@ -33,15 +33,7 @@ Proyek ini dikembangkan dengan studi kasus **SDN Mranggen 1** untuk menghadirkan
 
 Raspberry Pi berfungsi sekaligus sebagai **server lokal** dan **client**:
 
-```
- Kartu RFID ──► RFID RC522 ──(SPI/GPIO)──┐
-                                          ▼
- Buku (QR) ──► Webcam ──(USB)──►   Raspberry Pi 4 B
-                                   ├─ Web Server (Apache)
- LCD Touchscreen 7" ◄─(HDMI)────── ├─ Database MySQL (pustaka_kiosk)
-   (UI Kiosk / Browser)            ├─ Antarmuka web (React)
-                                   └─ Program pembaca RFID (Python)
-```
+<img width="803" height="740" alt="132" src="https://github.com/user-attachments/assets/e1118cb0-70c2-4f98-85d4-112501adcc9b" />
 
 Alur singkat: program Python membaca UID kartu RFID lalu mengirimkannya ke server lokal melalui HTTP POST (JSON), sementara pemindaian QR Code dilakukan di browser menggunakan webcam. Seluruh data disimpan di database MySQL lokal.
 
@@ -59,8 +51,6 @@ Alur singkat: program Python membaca UID kartu RFID lalu mengirimkannya ke serve
 | Kartu RFID | ISO/IEC 14443 A (MIFARE) |
 | Casing | 3D print, material PETG |
 | Pendukung | Adaptor 5V 3A, kabel micro-HDMI, kabel USB-C, kabel jumper |
-
-<img width="803" height="740" alt="132" src="https://github.com/user-attachments/assets/e1118cb0-70c2-4f98-85d4-112501adcc9b" />
 
 ### Perangkat Lunak
 
