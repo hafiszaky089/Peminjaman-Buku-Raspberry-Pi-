@@ -82,6 +82,7 @@ Alur singkat: program Python membaca UID kartu RFID lalu mengirimkannya ke serve
 | 3.3V | Pin 1 |
 
 > Aktifkan SPI terlebih dahulu: `sudo raspi-config` → *Interface Options* → *SPI* → *Yes*, lalu reboot.
+![Uploading Picture11.jpg…]()
 
 ##  Instalasi Singkat
 
