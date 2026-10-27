@@ -9,13 +9,13 @@ Sistem peminjaman dan pengembalian buku perpustakaan **mandiri (kiosk)** yang be
 
 ---
 
-## 📖 Latar Belakang
+## Latar Belakang
 
 Banyak perpustakaan sekolah dasar masih mengelola peminjaman secara manual karena tidak adanya staf perpustakaan tetap dan minimnya dukungan teknologi. Akibatnya, sirkulasi buku sulit dikontrol dan siswa sering hanya boleh membaca di tempat tanpa bisa membawa buku pulang.
 
 Proyek ini dikembangkan dengan studi kasus **SDN Mranggen 1** untuk menghadirkan solusi digitalisasi perpustakaan yang **terjangkau, mudah dipakai siswa SD, dan tetap berjalan tanpa internet**.
 
-## ✨ Fitur Utama
+## Fitur Utama
 
 - 🪪 **Identifikasi anggota dengan kartu RFID** (modul RC522, 13,56 MHz) — cukup *tap* kartu.
 - 📷 **Identifikasi buku dengan QR Code** — dipindai melalui webcam langsung di browser (client-side, library jsQR).
@@ -29,7 +29,7 @@ Proyek ini dikembangkan dengan studi kasus **SDN Mranggen 1** untuk menghadirkan
 - 🖥️ **Antarmuka mode kiosk** pada LCD touchscreen 7 inci yang sederhana untuk siswa SD.
 - 📴 **Offline-first** — web server dan database berjalan langsung di Raspberry Pi.
 
-## 🏗️ Arsitektur Sistem
+## Arsitektur Sistem
 
 Raspberry Pi berfungsi sekaligus sebagai **server lokal** dan **client**:
 
@@ -45,7 +45,7 @@ Raspberry Pi berfungsi sekaligus sebagai **server lokal** dan **client**:
 
 Alur singkat: program Python membaca UID kartu RFID lalu mengirimkannya ke server lokal melalui HTTP POST (JSON), sementara pemindaian QR Code dilakukan di browser menggunakan webcam. Seluruh data disimpan di database MySQL lokal.
 
-## 🧰 Teknologi & Perangkat
+## Teknologi & Perangkat
 
 ### Perangkat Keras
 
@@ -102,13 +102,13 @@ Alur singkat: program Python membaca UID kartu RFID lalu mengirimkannya ke serve
 6. **Jalankan program pembaca RFID** (default mengirim ke `http://localhost:3000/api/rfid/scan`).
 7. **Buka browser dalam mode kiosk** pada LCD touchscreen dan akses alamat aplikasi.
 
-## 🔁 Cara Penggunaan
+## Cara Penggunaan
 
 **Peminjaman:** tap kartu RFID anggota → pindai QR Code buku → transaksi tercatat.
 **Pengembalian:** tap kartu RFID anggota → pindai QR Code buku → status kembali *tersedia*, denda dihitung otomatis bila terlambat.
 **Petugas:** login ke dashboard untuk mengelola data buku, anggota, dan melihat riwayat transaksi.
 
-## 🧪 Hasil Pengujian
+## Hasil Pengujian
 
 | Pengujian | Hasil |
 | --- | --- |
@@ -120,7 +120,7 @@ Alur singkat: program Python membaca UID kartu RFID lalu mengirimkannya ke serve
 | Uji lapangan (SDN Mranggen 1) | 7 hari, 10 siswa & guru, 100 judul buku sampel |
 | Kepuasan pengguna (kuesioner) | Rata-rata **4,75 / 5 (95%)** |
 
-## 🛣️ Rencana Pengembangan
+## Rencana Pengembangan
 
 - Notifikasi pengingat batas pengembalian (SMS/email)
 - Laporan statistik (buku terpopuler, tren peminjaman)
@@ -128,26 +128,3 @@ Alur singkat: program Python membaca UID kartu RFID lalu mengirimkannya ke serve
 - Indikator visual keberhasilan pemindaian QR Code
 - Backup data otomatis dan logging transaksi lebih detail
 - Dukungan barcode sebagai alternatif identifikasi
-
-## 👥 Tim Pengembang
-
-| Nama | NIM |
-| --- | --- |
-| Dzaki Syafiq Hafizh Setiyono | 3.33.23.1.05 |
-| Zaidan Arrifqi | 3.33.23.1.24 |
-| Rifky Achmad Raditya | 3.33.23.1.20 |
-| Muhammad Noor Aziz | 3.33.23.1.14 |
-
-**Dosen Pembimbing:**
-- Sindung H. W. S., BSEE., M.Eng.Sc.
-- Muhammad Anif, S.T., M.Eng.
-
-**Institusi:** Program Studi D3 Teknik Telekomunikasi, Jurusan Teknik Elektro, Politeknik Negeri Semarang.
-
-## 🙏 Ucapan Terima Kasih
-
-Terima kasih kepada Kepala Sekolah dan para guru **SDN Mranggen 1** yang telah berpartisipasi dalam uji coba lapangan.
-
-## 📄 Lisensi
-
-Tambahkan lisensi sesuai kebutuhan (misalnya MIT) pada file `LICENSE`.
