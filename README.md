@@ -1,4 +1,5 @@
 <img width="388" height="388" alt="Picture11" src="https://github.com/user-attachments/assets/b0265299-5c4f-4241-8d19-0df5a11f5370" />
+
 # 📚 Pustaka Kiosk — Sistem Peminjaman Buku Perpustakaan Berbasis Raspberry Pi, RFID, dan QR Code
 
 Sistem peminjaman dan pengembalian buku perpustakaan **mandiri (kiosk)** yang berjalan **sepenuhnya secara lokal di Raspberry Pi tanpa membutuhkan koneksi internet**. Anggota cukup menempelkan kartu RFID, lalu memindai QR Code pada buku, dan transaksi tercatat otomatis.
