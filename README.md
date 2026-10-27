@@ -17,17 +17,17 @@ Proyek ini dikembangkan dengan studi kasus **SDN Mranggen 1** untuk menghadirkan
 
 ## Fitur Utama
 
-- 🪪 **Identifikasi anggota dengan kartu RFID** (modul RC522, 13,56 MHz) — cukup *tap* kartu.
-- 📷 **Identifikasi buku dengan QR Code** — dipindai melalui webcam langsung di browser (client-side, library jsQR).
-- 🔄 **Peminjaman & pengembalian otomatis**, status buku berubah otomatis (*dipinjam* / *tersedia*).
-- 💰 **Perhitungan denda keterlambatan otomatis.**
-- 👤 **Manajemen anggota** — tambah, ubah, hapus, cari, dan pendaftaran kartu RFID.
-- 📕 **Manajemen koleksi buku** — tambah, ubah, hapus, cari.
-- 🏷️ **Pembangkitan QR Code otomatis** untuk setiap buku baru.
-- 🧾 **Riwayat transaksi** peminjaman dan pengembalian.
-- 🔐 **Login petugas** untuk mengakses dashboard manajemen.
-- 🖥️ **Antarmuka mode kiosk** pada LCD touchscreen 7 inci yang sederhana untuk siswa SD.
-- 📴 **Offline-first** — web server dan database berjalan langsung di Raspberry Pi.
+-  **Identifikasi anggota dengan kartu RFID** (modul RC522, 13,56 MHz) — cukup *tap* kartu.
+-  **Identifikasi buku dengan QR Code** — dipindai melalui webcam langsung di browser (client-side, library jsQR).
+-  **Peminjaman & pengembalian otomatis**, status buku berubah otomatis (*dipinjam* / *tersedia*).
+-  **Perhitungan denda keterlambatan otomatis.**
+-  **Manajemen anggota** — tambah, ubah, hapus, cari, dan pendaftaran kartu RFID.
+-  **Manajemen koleksi buku** — tambah, ubah, hapus, cari.
+-  **Pembangkitan QR Code otomatis** untuk setiap buku baru.
+-  **Riwayat transaksi** peminjaman dan pengembalian.
+-  **Login petugas** untuk mengakses dashboard manajemen.
+-  **Antarmuka mode kiosk** pada LCD touchscreen 7 inci yang sederhana untuk siswa SD.
+-  **Offline-first** — web server dan database berjalan langsung di Raspberry Pi.
 
 ## Arsitektur Sistem
 
@@ -83,7 +83,7 @@ Alur singkat: program Python membaca UID kartu RFID lalu mengirimkannya ke serve
 
 > Aktifkan SPI terlebih dahulu: `sudo raspi-config` → *Interface Options* → *SPI* → *Yes*, lalu reboot.
 
-## 🚀 Instalasi Singkat
+##  Instalasi Singkat
 
 > Sesuaikan langkah di bawah dengan struktur repositori Anda.
 
